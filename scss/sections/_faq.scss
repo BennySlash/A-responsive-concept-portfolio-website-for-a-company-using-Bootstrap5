@@ -1,0 +1,25 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.cla {
+  &__info {
+    @include gradient;
+  }
+  &__input {
+    input {
+      border: none;
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+    textarea {
+      border: none;
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+  }
+  .btn {
+    padding: 0.5rem 1rem;
+    display: block;
+    @include gradient;
+    color: $white;
+    border-radius: 1.5rem;
+  }
+}

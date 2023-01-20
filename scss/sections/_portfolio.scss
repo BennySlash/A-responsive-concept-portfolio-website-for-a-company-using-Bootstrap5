@@ -1,0 +1,62 @@
+@use "../custom" as *;
+
+// .portfolio {
+//   img {
+//     position: relative;
+//     border-top: 4px solid $primary;
+//     aspect-ratio: 1.3;
+//     transition: linear 200ms;
+
+//     .portfolio-info {
+//       position: absolute;
+//     }
+//   }
+//   img:hover {
+//     cursor: pointer;
+//     transform: scale(1.1);
+//   }
+// }
+
+.portfolio {
+  .portfolio-box {
+    position: relative;
+    border-top: 4px solid $primary;
+
+    img {
+      width: 100%;
+      aspect-ratio: 1.3;
+      transform: linear 350ms;
+    }
+
+    .portfolio-info {
+      background-color: rgba($primary, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $white;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      visibility: hidden;
+      transform: linear 350ms;
+
+      .caption {
+        text-align: center;
+      }
+    }
+  }
+
+  .portfolio-box:hover {
+    cursor: pointer;
+
+    img {
+      transform: scale(1.1);
+    }
+
+    .portfolio-info {
+      visibility: visible;
+      transform: scale(1.1);
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.menu {
+  @include gradient;
+  padding: 0.5rem 2rem;
+
+  .collapse {
+    justify-content: flex-end;
+  }
+  .navbar-nav {
+    margin-right: 0 !important;
+  }
+  li {
+    padding: 0 0.7rem;
+  }
+
+  a {
+    color: $white;
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+  }
+}

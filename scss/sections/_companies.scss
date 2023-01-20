@@ -1,0 +1,43 @@
+@use "../custom" as *;
+
+// .company-logo {
+//   @include media-breakpoint-down(md) {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr;
+//     grid-template-rows: 1fr 1fr;
+//     padding: 0 2rem;
+//     place-content: center;
+//     gap: 20px;
+//   }
+//   display: grid;
+//   grid-auto-flow: column;
+//   margin: 0 auto;
+
+//   img {
+//     @include media-breakpoint-down(md) {
+//       width: 80px;
+//     }
+//     width: 100px;
+//     // aspect-ratio: 1;
+//   }
+// }
+.companies {
+  // padding-block-end: 3rem;
+  // margin: 0 auto;
+  .container {
+    margin: 0 auto;
+  }
+  &__logo-box {
+    padding: 0.2rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+    img {
+      width: 100px;
+
+      &:hover {
+        filter: opacity(0.7);
+        cursor: pointer;
+      }
+    }
+  }
+}
